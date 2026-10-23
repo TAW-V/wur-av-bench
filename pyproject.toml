@@ -1,0 +1,24 @@
+[project]
+name = "wur-av-bench"
+version = "0.1.0"
+description = "evaluation and node annotation tools for 3D and 5D node reconstructions"
+readme = "README.md"
+authors = [
+    { name = "Thomas A.W. Versmissen", email = "thomasversmissen@gmail.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+    "matplotlib>=3.7",
+    "open3d[app]>=0.18",
+    "tqdm>=4.65",
+]
+
+[project.scripts]
+wur-av-bench = "wur_av_bench.cli:main"
+
+[build-system]
+requires = ["uv_build>=0.10.9,<0.11.0"]
+build-backend = "uv_build"

@@ -1,0 +1,20 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+*.json
+
+# Virtual environments
+.venv
+
+# Local run configs (machine-specific paths)
+run_*.py
+
+#ide
+.vscode/
+settings.json
+launch.json
+run*
